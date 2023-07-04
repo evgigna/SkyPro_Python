@@ -19,4 +19,4 @@ def bank(x, y):
     return sum
 
 sum = bank(x, y)
-print('Величина вклада через', y, 'лет составит', sum)
+print('Величина вклада через', y, 'лет составит', round(sum, 2))

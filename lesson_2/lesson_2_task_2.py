@@ -10,7 +10,7 @@
 # Результат вызова функции должен сохраняться в переменную.
 # Выведите в консоль ответ: `год <номер года>: <True|False>`, например, `год 2024: True`, `год 2023: False`
 
-x = int(input('Введите год:'))
+x = input('Введите год:')
 
 def is_year_leap(year):
     if year % 4 == 0:
@@ -19,5 +19,9 @@ def is_year_leap(year):
         leap = False
     return leap
 
-a = is_year_leap(x)
-print('год', x, ':', a)
+if x.isdigit() == True:
+    x = int(x)
+    a = is_year_leap(x)
+    print('год', x, ':', a)
+else:
+    print('Введите корректное значение')
