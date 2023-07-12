@@ -3,11 +3,11 @@ class User:
         self.first_name = first_name
         self.last_name = last_name
 
-    def firstnamePrint(self):
+    def firstname_print(self):
         print('Имя', self.first_name)
 
-    def lastnamePrint(self):
+    def lastname_print(self):
         print('Фамилия', self.last_name)
 
-    def userPrint(self):
+    def user_print(self):
         print('Имя и Фамилия', self.first_name, self.last_name)

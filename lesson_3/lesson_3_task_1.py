@@ -25,6 +25,6 @@ from user import User
 
 my_user = User('Anna', 'Karenina')
 
-my_user.firstnamePrint()
-my_user.lastnamePrint()
-my_user.userPrint()
+my_user.firstname_print()
+my_user.lastname_print()
+my_user.user_print()
