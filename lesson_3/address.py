@@ -1,11 +1,13 @@
 class Address:
 
-    def __init__(self, index, city, street, house, apartment):
+    def __init__(self, index, city, street, house, flat):
         self.index = index
         self.city = city
         self.street = street
         self.house = house
-        self.apartment = apartment
+        self.flat = flat
+
+    def __str__(self):
+        return f"{self.index} , {self.city} , {self.street} , {self.house} - {self.flat}"
     
-    def printAddress(self):
-        print(self.index, self.city, self.street, self.house, '-', self.apartment)
+    
