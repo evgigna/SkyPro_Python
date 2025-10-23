@@ -14,14 +14,11 @@ from selenium.webdriver.common.by import By
 driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
 
 driver.get("http://uitestingplayground.com/textinput")
-
 input_field = driver.find_element(By.CSS_SELECTOR, "#newButtonName")
-
 input_field.send_keys("SkyPro")
-
-button = driver.find_element(By.CSS_SELECTOR, "#updatingButton").click()
-
-txt = driver.find_element(By.CSS_SELECTOR, "#updatingButton").text
+button = driver.find_element(By.CSS_SELECTOR, "#updatingButton")
+button.click()
+txt = button.text
 
 print(txt)
 

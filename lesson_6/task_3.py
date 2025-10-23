@@ -18,7 +18,10 @@ try:
     
     waiter = WebDriverWait(driver, 30)
 
-    images = waiter.until(EC.visibility_of_element_located((By.CSS_SELECTOR, "#award")))
+    img_1 = waiter.until(EC.visibility_of_element_located((By.CSS_SELECTOR, "#compass")))
+    img_2 = waiter.until(EC.visibility_of_element_located((By.CSS_SELECTOR, "#calendar")))
+    img_3 = waiter.until(EC.visibility_of_element_located((By.CSS_SELECTOR, "#award")))
+    img_4 = waiter.until(EC.visibility_of_element_located((By.CSS_SELECTOR, "#landscape")))
 
     print("src = ", driver.find_element(By.CSS_SELECTOR, "#award").get_attribute("src"))
 
